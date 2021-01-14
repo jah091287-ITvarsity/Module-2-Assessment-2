@@ -1,7 +1,23 @@
+
+
 body{
      padding    : 0;
      margin     : 0;
      font-family: Helvetica;
+}
+
+h2{
+    font-family:fantasy;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 35px;
+     font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+h2:hover{
+    color: wheat;
 }
 
 #header{
@@ -11,7 +27,7 @@ body{
       z-index : 500;
       width   :100%;
       height  :80px;
-      background-image  : url('images/wood-bg.png');
+      background-image  : url('images/DotsA.gif');
       background-repeat: repeat-x;
 }
 
@@ -22,54 +38,85 @@ body{
       padding-top: 15px; 
 }
 
-#tabs-top{
-      position: fixed;
-      top     : 80px;
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    top     : 80px;
       left    : 0;
       z-index : 500;
       width   : 100%;
       height  : 40px;
-      background-color: darkgreen;
+  background-color: #333;
+  overflow: hidden;
 }
 
-#tabs-top a{
-      float   : left;
-      display : block;
-      width   : 23%;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+          display : block;
+      width   : 22%;
       height  :35px;
       font-weight : 700;
-      color       : white;
-      text-align  : center;
-      text-decoration : none;
-      padding-top     : 12px;  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
 #main-home{
        margin-top: 120px;
 }
 
-#tabs-bottom{
-      position : fixed;
-      bottom   : 0;
-      left     : 0;
-      z-index  : 500;
-      width    : 100%;
-      height   : 40px;
-      background-color: forestgreen;
+/* Add a black background color to the top navigation */
+.topnav-bottom {
+    position: fixed;
+    bottom     : 0px;
+    left    : 0;
+      z-index : 500;
+      width   : 100%;
+      height  : 40px;
+  background-color: #333;
+  overflow: hidden;
 }
 
-#tabs-bottom a{
-     float : left;
-     display : block;
-     width : 50%;
-     height : 35px;
-     font-weight : 700;
-     color       : white;
-     text-align  : center;
-     text-decoration : none;
-     padding-top     : 11px;
+/* Style the links inside the navigation bar */
+.topnav-bottom a {
+  float: left;
+    display : block;
+     width   : 40%;
+      height  : 40px;
+      font-weight : 700;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
+/* Change the color of links on hover */
+.topnav-bottom a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav-bottom a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 #main{
     margin-top: 119px;
     
@@ -79,7 +126,7 @@ body{
 }
 
 body {
-    background-image: url(images/map-blur.png);
+    background-image: url(images/map-blur.jpg);
 }
 
 
@@ -90,7 +137,7 @@ body {
 
 a.info-box{
       text-decoration : none;
-      background      : rgba(255 ,225, 255, 0.8);
+      background      : rgba(220 ,215, 250, 0.6);
       width           : 90%;
       height          : 90px;
       display         : block;
